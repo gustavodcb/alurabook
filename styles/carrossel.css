@@ -1,0 +1,144 @@
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.card {
+    background: var(--branco);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0.5em 0;
+    line-height: 27px;
+}
+
+.descricao__texto {
+    color: rgba( 0, 0, 0, 85%);
+    line-height: 21px;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card__saibamais {
+    background: var(--laranja);
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+    text-align: center;
+    padding: 1em 2.5em;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .swiper {
+        width: 70%;
+    }
+
+    .carrossel__titulo {
+        padding: 3em 0;
+        font-size: 26px;
+    }
+
+    .card {
+        width: 55%;
+        margin: 2.5em auto;
+    }
+
+    .card__saibamais {
+        padding: 1em 2.4em;
+    }
+    .card__saibamais {
+        transition: transform 0.5s;
+        transform: scale(1);
+    }
+    
+    .card__saibamais:hover,
+    .card__saibamais:focus {
+        transform: scale(0.9);
+    
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__titulo {
+        padding: 1.7em 0;
+        font-size: 32px;
+    }
+
+    .carrossel-res1728 {
+        display: flex;
+        justify-content: space-around;
+        padding: 7em 8em;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2.5em auto;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+        line-height: 1.5em;
+        width: 80%;
+    }
+
+    .descricao__titulo-livro {
+        font-size: 18px;
+    }
+
+    .descricao__texto {
+        width: 70%;
+        line-height: 1.7em;
+    }
+}
